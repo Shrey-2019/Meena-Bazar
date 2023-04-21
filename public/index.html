@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+    <title>Meena Bazar</title>
+</head>
+
+<body>
+    <!--INCLUDE JAVASCRIPT-->
+
+    <script type="module" src="./script.js">
+
+    </script>
+
+    <!--HEADER NAVBAR SECTION-->
+    <div class="navbar navHeader ">
+        <div class="container-fluid ">
+            <a class=" " href="#">
+                <img class="navbarIcon" src="./images/logo.png" alt="logo" />
+            </a>
+            <div class="navbar-right">
+                <button id="orderHeaderButton" class="btn-signup" href="#orders" data-toggle="modal"
+                    data-target=".orders" style="visibility: hidden;">
+                    Your Cart
+                </button>
+
+                <button id="signupHeaderButton" class="btn-signup" href="#signup" data-toggle="modal"
+                    data-target=".log-sign">
+                    SignIn
+                </button>
+
+                <a class=" " href="https://www.instagram.com/meena_.bazaar_/" target="_blank">
+                    <img class="social-icon" src="./images/instagram.png" alt="logo" />
+                </a>
+
+                <a class=" " href="mailto:kanakshinde36@gmail.com" target="_blank">
+                    <img class="social-icon" src="./images/email.png" alt="logo" />
+                </a>
+            </div>
+            <span class=" menu-icon toggle mobile-menu" id="toggle-button">
+                <img src="./images/menu-squared-50.png" alt="">
+            </span>
+
+        </div>
+    </div>
+
+    <!--MAIN BODY-->
+    <div class="container-fluid">
+        <!--HEADER NAVIGATION MENU-->
+        <div class="header-menu">
+            <div class="nav justify-content-center ">
+                <ul class="nav nav-pills" id="myTabHeader" role="tablist">
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="jewellery-tab" data-toggle="pill" href="#jewellery" role="tab"
+                            aria-controls="jewellery" aria-selected="true">Jewellery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="bags-tab" data-toggle="pill" href="#bags" role="tab"
+                            aria-controls="bags" aria-selected="false">BOHO Bags</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" id="wallHangings-tab" data-toggle="pill" href="#wallHangings" role="tab"
+                            aria-controls="wallHangings" aria-selected="false">Wall Hangings</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <!--HR SEPARATOR-->
+        <hr class="center-diamond">
+
+        <!--MAIN CONTAINER BODY-->
+        <div class="tab-content container" id="myTabContent">
+
+            <!--JEWELLERY SECTION-->
+            <div id="jewellery" role="tabpanel" aria-labelledby="jewellery-tab" class="tab-pane fade show active">
+                <div class="blog-posts" id="main-post-container-jwl">
+                    <script type="module">
+                        import { displayPosts } from "./script.js";
+                        displayPosts("main-post-container-jwl", "jewellery")
+                    </script>
+                </div>
+            </div>
+
+            <!--BAGS SECTION-->
+            <div id="bags" role="tabpanel" aria-labelledby="bags-tab" class="tab-pane fade">
+                <div class="blog-posts" id="main-post-container-bags">
+
+
+                    <script type="module">
+                        import { displayPosts } from "./script.js";
+                        displayPosts("main-post-container-bags", "bags")
+                    </script>
+
+                </div>
+            </div>
+
+            <!--WALL HANGINGS SECTION-->
+            <div id="wallHangings" role="tabpanel" aria-labelledby="wallHangings-tab" class="tab-pane fade">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--SIDE NAVIGATION SECTION-->
+    <div class="sidenav " id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" id="close-toggle-button">&times;</a>
+        <div class="sidenav-contact">
+
+            <!--SIDE NAVIGATION CONTACT SECTION-->
+            <h3 class="title">
+                Contact
+            </h3>
+            <div class="widget-content ">
+                <div>
+                    <a class=" " href="https://www.instagram.com/meena_.bazaar_/" target="_blank">
+                        <img class="social-icon" src="./images/instagram.png" alt="logo" />
+                    </a>
+
+                    <a class=" " href="mailto:kanakshinde36@gmail.com" target="_blank">
+                        <img class="social-icon" src="./images/email.png" alt="logo" />
+                    </a>
+                </div>
+
+                <hr class="center-diamond">
+            </div>
+
+
+
+            <!--SIDE NAVIGATION CATEGORY SECTION-->
+            <div class="sidenav-category-menu">
+                <h3 class="title">
+                    Categories
+                </h3>
+
+                <div class="nav justify-content-center flex-column">
+                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link active" id="jewellery-tab" data-toggle="pill" href="#jewellery"
+                                role="tab" aria-controls="jewellery" aria-selected="true">Jewellery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bags-tab" data-toggle="pill" href="#bags" role="tab"
+                                aria-controls="bags" aria-selected="false">BOHO Bags</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                <a class="nav-link" id="wallHangings-tab" data-toggle="pill" href="#wallHangings" role="tab"
+                                    aria-controls="wallHangings" aria-selected="false">Wall Hangings</a>
+                            </li> -->
+                    </ul>
+                </div>
+                <!--HR SEPARATOR-->
+                <hr class="center-diamond">
+            </div>
+
+            <div class="sidenav-signup">
+                <div>
+                    <button id="signupHeaderButton2" class="btn-signup" href="#signup" data-toggle="modal"
+                        data-target=".log-sign">
+                        SignIn
+                    </button>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <button id="orderHeaderButton2" class="btn-signup" href="#orders" data-toggle="modal"
+                        data-target=".orders" style="visibility: hidden;">
+                        Your Cart
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--orders modal-->
+    <div class="modal fade bs-modal-sm orders" id="myModalCart" tabindex="-1" role="dialog"
+        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+
+                <div style="display: grid;">
+                    <h1 class="cartHeadTitle">Your Cart</h1>
+
+                    <hr class="center-diamond">
+                </div>
+
+                <div class="modal-body">
+                    <div class="tab-content">
+
+                        <span style="display: none;color: #B7B3EC;align-content: center;" id="cartEmptySpan">Empty Cart</span>
+                        <div class="tab-pane active in" id="cartItems-div">
+                            
+                            
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog"
+        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+
+                <div class="nav justify-content-center ">
+                    <ul class="nav nav-pills" id="mySignupTab" role="tablist">
+                        <li class="nav-item " id="singinTab">
+                            <a class="nav-link active" id="jewellery-tab" data-toggle="pill" href="#signin" role="tab"
+                                aria-controls="jewellery" aria-selected="true">Sign-In</a>
+                        </li>
+                        <li class="nav-item" id="singupTab">
+                            <a class="nav-link" id="bags-tab" data-toggle="pill" href="#signup" role="tab"
+                                aria-controls="bags" aria-selected="false">Sign-Up</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" id="wallHangings-tab" data-toggle="pill" href="#wallHangings" role="tab"
+                                aria-controls="wallHangings" aria-selected="false">Wall Hangings</a>
+                        </li> -->
+                    </ul>
+
+                    <hr class="center-diamond">
+                </div>
+
+                <div class="modal-body">
+                    <div id="myTabContent" class="tab-content">
+
+                        <div class="tab-pane active in" id="signin">
+                            <div>
+                                <div>
+                                    <!-- Sign In Form -->
+                                    <!-- Text input-->
+
+                                    <div class="group">
+                                        <input id="signinEmail" required="" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Email address</label>
+                                    </div>
+
+
+                                    <!-- Password input-->
+                                    <div class="group">
+                                        <input id="signinPassword" required="" class="input" type="password"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Password</label>
+                                    </div>
+                                    <em>minimum 6 characters</em>
+
+                                    <div class="forgot-link">
+                                        <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot
+                                            my password</a>
+                                    </div>
+                                    <span style="display: none;color: #B7B3EC;" id="notExist">Account does not
+                                        exist</span>
+                                    <span style="display: none;color: #B7B3EC;" id="requiredSignin">All fields are
+                                        required</span>
+                                    <span style="display: none;color: #B7B3EC;" id="successfullLogin">Logged In! Close
+                                        this to continue...</span>
+
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="signin"></label>
+                                        <div class="controls">
+                                            <button class="btn-signup" id="confirmSignin">
+                                                Sign-In
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="signup">
+                            <div>
+                                <fieldset>
+                                    <!-- Sign Up Form -->
+                                    <!-- Text input-->
+                                    <div class="group">
+                                        <input id="firstName" required="" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">First Name</label>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="group">
+                                        <input id="lastName" required="" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Last Name</label>
+                                    </div>
+
+                                    <!-- Password input-->
+                                    <div class="group">
+                                        <input id="email" required="" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Email</label>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="group">
+                                        <input id="password" required="" class="input" type="password"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Password</label>
+                                    </div>
+                                    <em>1-8 Characters</em>
+
+                                    <div class="group">
+                                        <input id="country" required="" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Country</label>
+                                    </div>
+                                    <span style="display: none;color: #B7B3EC;" id="accountExist">Account already
+                                        exists</span>
+                                    <span style="display: none;color: #B7B3EC;" id="required">All fields are
+                                        required</span>
+                                    <span style="display: none;color: #B7B3EC;" id="created">Account created please
+                                        login to continue</span>
+
+
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="confirmsignup"></label>
+                                        <div class="controls">
+                                            <button class="btn-signup" name="confirmsignup" id="confirmsignup">
+                                                Sign Up
+                                            </button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--modal2-->
+
+    <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog"
+        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div>
+                        <a href="" class="closebtn" data-dismiss="modal" aria-label="Close">&times;</a>
+                    </div>
+
+
+                    <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+
+
+                </div>
+                <hr class="center-diamond">
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="group">
+                                <input required="" class="input" type="text"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label class="label" for="date">Email address</label>
+                            </div>
+
+
+                            <div class="control-group">
+                                <label class="control-label" for="forpassword"></label>
+                                <div class="controls">
+
+                                    <button class="btn-signup" id="forpasswodr" name="forpassword" href="#signup">
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

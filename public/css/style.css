@@ -1,0 +1,631 @@
+@media (min-width: 768px) {
+    .navHeader {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navHeader {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbarIcon {
+        width: 200px;
+        height: 25%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbarIcon {
+        width: 200px;
+        height: 25%;
+    }
+}
+
+@media (min-width: 786px) {
+    .navbarIcon {
+        width: 200px;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social-icon {
+        width: 35px;
+        height: 35px;
+
+    }
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: bottom;
+
+}
+
+.navbar-right span {
+    color: #1A2F46;
+}
+
+.navbar-right a {
+    margin: 10px;
+
+}
+
+.navbar-right a:hover {
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .navHeader .navbar-right {
+        display: none;
+    }
+}
+
+body {
+    background: linear-gradient(90deg, hsla(244, 60%, 95%, 1) 0%, hsla(28, 60%, 95%, 1) 100%);
+    font: normal bold 'Zilla Slab', Serif;
+}
+
+.nav-pills li a {
+    color: #1A2F46;
+    font-size: 18px
+}
+
+.cart-item-title{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-body .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #B7B3EC;
+    border-radius: .25rem;
+}
+.btn-signup {
+    border-style: none;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #B7B3EC;
+    font-size: 18px;
+    outline: none;
+    justify-self: center;
+}
+
+
+.btn-signup:focus {
+    border-style: none;
+    outline: none;
+}
+
+.btn-signup:hover {
+    background-color: #EBFAF8;
+    color: #1A2F46;
+}
+
+
+.nav-pills li a:hover {
+    background-color: #EBFAF8;
+}
+
+
+
+
+#myTab li {
+    margin: 10px;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    background-color: #B7B3EC;
+}
+
+.nav-pills .nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#myTabContent div {
+    text-align: center;
+}
+
+#myTabContent .primary-content-label {
+    padding: 10px;
+    text-align: center;
+    color: #1c1c1c;
+    font: normal bold 24px 'Zilla Slab', Serif;
+}
+
+article {
+    display: block;
+}
+
+
+
+.post-outer-container .post-thumbnail-container {
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.post .post-title {
+    font: normal bold 36px 'Zilla Slab', Serif;
+    color: #1c1c1c;
+}
+
+.blog-posts {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+    .blog-posts {
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 720px) {
+    .blog-posts {
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.post-outer-container .post-thumbnail-container img {
+    transition: transform 0.5s ease;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.blog-posts .post-outer-container .post-title a {
+    font: normal bold 18px 'Zilla Slab', Serif;
+    color: #1c1c1c;
+    display: inline-block;
+    margin: 15px 0 7px;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 40px;
+}
+
+
+@media (max-width:900px) {
+    .blog-posts .post-outer-container .post-title a {
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 65px;
+    }
+}
+
+@media (max-width:390px) {
+    .blog-posts .post-outer-container .post-title a {
+        width: fit-content;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 55px;
+    }
+}
+
+.post-outer-container .post-div-main {
+    padding: 2px;
+    padding-bottom: 5px;
+    background-color: floralwhite;
+    height: auto;
+
+}
+
+
+/* .post-outer-container .post-div-main {
+    padding: 2px;
+    padding-bottom: 5px;
+    background-color: floralwhite;
+} */
+
+.blog-posts .post-outer-container {
+    margin-bottom: 60px;
+    margin: 10px;
+    text-align: center;
+    width: 230px;
+}
+
+@media (min-width: 720px) {
+
+    .blog-posts .post-outer-container {
+        margin-bottom: 30px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .blog-posts .post-outer-container {
+
+        width: 250px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .blog-posts .post-outer-container {
+        margin-bottom: 30px;
+        width: 320px;
+    }
+}
+
+
+hr {
+
+    border: 0;
+    height: 2px;
+    width: 60%;
+    position: relative;
+    margin: 10px auto;
+}
+
+.center-diamond {
+    background: #D2D1F0;
+}
+
+.center-diamond:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #D2D1F0;
+    display: inline-block;
+    border: 2px solid #D2D1F0;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin: 0 0 0 -3px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Opera, Chrome, and Safari */
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.125em;
+    display: none;
+}
+
+.mobile-menu img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 650px) {
+    .mobile-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #mySidenav {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .header-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 399px) {
+    .sidenav-category-menu {
+        display: none;
+    }
+}
+
+
+.mobile-sidebar-outer .mobile-sidebar-inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+}
+
+.sidenav h3 {
+    font: normal bold 24px 'Zilla Slab', Serif;
+    color: #1c1c1c;
+    text-align: center;
+}
+
+.sidenav .widget-content div {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, hsla(249, 64%, 98%, 1) 50%, hsla(28, 60%, 95%, 1) 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav-signup{
+    margin: 10px;
+    position: fixed;
+    width: -webkit-fill-available;
+    display: block;
+    text-align-last: center;
+}
+
+.modal-header{
+    border: none;
+    display: block;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #B7B3EC;
+}
+
+.closebtn:hover {
+    color: #5F3D57;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#myTab {
+    display: block !important;
+    padding: 10px;
+}
+
+@media (min-width: 576px) {
+    .modal-sm {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    pointer-events: none;
+}
+
+.modal-content .nav {
+    margin: 5px;
+}
+
+.group {
+    position: relative;
+    margin-top: 25px;
+}
+
+.input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    background: none;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #B7B3EC;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:focus~.label,
+.input.used~.label {
+    top: -20px;
+    transform: scale(.75);
+    left: -15px;
+    /* font-size: 14px; */
+    color: #B7B3EC;
+}
+
+.label {
+    color: #757575;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: -1px;
+    padding: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #B7B3EC;
+    transition: all 0.2s ease;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+
+/* active */
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+em {
+    display: none;
+}
+
+.forgot-link a {
+    color: #B7B3EC;
+    padding-left: 5px;
+}
+
+.forgot-link {
+    justify-content: unset;
+    display: flex;
+}
+
+.controls .btn-signup {
+    border-style: none;
+    padding: 5px 15px;
+    width: -webkit-fill-available;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #B7B3EC;
+    font-size: 18px;
+    outline: none;
+    justify-self: center;
+}
+
+.cartHeadTitle {
+    padding: 10px 15px;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    justify-self: center;
+    font-weight: normal;
+    border-radius: 10px;
+    background-color: #B7B3EC;
+    font-size: 18px;
+}
+.buyNowBtn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.price{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 335px) {
+    .cartImage {
+        width: 60px;
+    }
+
+    .main-card-body h5{
+        font-size: 12px;
+    }
+}
